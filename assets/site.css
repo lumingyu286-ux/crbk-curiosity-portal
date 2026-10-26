@@ -12,7 +12,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scrollbar-color: var(--blue) var(--paper); }
-body { min-width: 320px; margin: 0; }
+body { margin: 0; }
 ::selection { background: var(--lemon); color: var(--ink); }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -91,7 +91,7 @@ svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width:
 .outro-inner { display: flex; align-items: end; justify-content: space-between; gap: 80px; }
 .outro h2 { margin: 0 0 20px; max-width: 710px; font-size: clamp(53px, 5.25vw, 78px); line-height: 1.18; }
 .outro p { max-width: 650px; margin: 0; font-size: 16px; line-height: 1.8; }
-.button-blue { min-width: 290px; background: var(--blue); color: #fff; white-space: nowrap; }
+.button-blue { min-width: min(290px, 100%); background: var(--blue); color: #fff; white-space: nowrap; }
 .button-blue:hover { background: var(--ink); }
 .site-footer { background: var(--ink); color: #fff; padding: 25px 0; }
 .footer-inner { display: flex; align-items: center; gap: 28px; font-size: 12px; }
